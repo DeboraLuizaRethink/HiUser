@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B"
+    tools:context=".FragmentInfo">
+
+    <TextView
+        android:id="@+id/txt_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Digite sua cidade:"
+        android:textColor="#D3FA3A"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_title4"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextState" />
+
+    <EditText
+        android:id="@+id/edtTextCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Cidade"
+        android:inputType="textPersonName"
+        android:textColor="#D3FA3A"
+        android:textColorHighlight="#D3FA3A"
+        android:textColorHint="#D3FA3A"
+        android:textColorLink="#D3FA3A"
+        app:layout_constraintStart_toStartOf="@+id/txt_title3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title3" />
+
+    <Button
+        android:id="@+id/btnSeguir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#D3FA3A"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="15dp"
+        android:text="Cadastrar"
+        android:textColor="#1B1B1B"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextCity" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Digite seu nome:"
+        android:textColor="#D3FA3A"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Digite seu país:"
+        android:textColor="#D3FA3A"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_title"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextName" />
+
+    <TextView
+        android:id="@+id/txt_title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Digite seu Estado:"
+        android:textColor="#D3FA3A"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_title"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextCountry" />
+
+    <EditText
+        android:id="@+id/edtTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#D3FA3A"
+        android:textColorHighlight="#D3FA3A"
+        android:textColorHint="#D3FA3A"
+        android:textColorLink="#D3FA3A"
+        app:layout_constraintStart_toStartOf="@+id/txt_title"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <EditText
+        android:id="@+id/edtTextCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="País"
+        android:inputType="textPersonName"
+        android:textColor="#D3FA3A"
+        android:textColorHighlight="#D3FA3A"
+        android:textColorHint="#D3FA3A"
+        android:textColorLink="#D3FA3A"
+        app:layout_constraintStart_toStartOf="@+id/txt_title2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title2" />
+
+    <EditText
+        android:id="@+id/edtTextState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Estado"
+        android:inputType="textPersonName"
+        android:textColor="#D3FA3A"
+        android:textColorHighlight="#D3FA3A"
+        android:textColorHint="#D3FA3A"
+        android:textColorLink="#D3FA3A"
+        app:layout_constraintStart_toStartOf="@+id/txt_title4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
