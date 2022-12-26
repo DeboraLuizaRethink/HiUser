@@ -2,6 +2,7 @@ package com.example.hiuser
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -45,7 +46,10 @@ class FragmentAnswers: Fragment(R.layout.fragmento_answers) {
         }
 
         fun main() {
-            WelcomeCostumer(nameText, countryText)
+           val user = WelcomeCostumer(nameText, countryText)
+            println("nome passado: ${user.name} país da pessoa: ${user.country}")
+            /*Toast.makeText(this, "Seja bem vinda: ${user.customerName} do(a) ${user.country}" ,
+                Toast.LENGTH_SHORT).show()*/
         }
         main()
     }

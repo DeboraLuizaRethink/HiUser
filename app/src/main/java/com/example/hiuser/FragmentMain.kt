@@ -14,7 +14,6 @@ class FragmentMain: Fragment(R.layout.fragmento_main) {
         val binding = FragmentoMainBinding.bind(view)
         fragmentFirstBinding = binding
 
-
         binding.btnCadastrar.setOnClickListener {
             findNavController().navigate(R.id.action_fragmentMain_to_fragmentInfo)
         }
